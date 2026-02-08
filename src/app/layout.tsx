@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme.provider";
 
+import { Providers } from "@/components/providers";
 import "./globals.css";
 
 const inter = Inter({
@@ -23,21 +24,17 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode; 
 }>) {
   return (
+   
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${plexMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+          <Providers>
+              {children}
+          </Providers>
       </body>
     </html>
   );

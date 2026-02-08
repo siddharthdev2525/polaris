@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.36.10",
+    "@clerk/themes": "^2.4.50",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
@@ -39,11 +41,12 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
+    "convex": "^1.31.7",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.562.0",
-    "next": "16.1.4",
+    "next": "^16.1.6",
     "next-themes": "^0.4.6",
     "react": "19.2.3",
     "react-day-picker": "^9.13.0",
@@ -58,7 +61,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.33",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
